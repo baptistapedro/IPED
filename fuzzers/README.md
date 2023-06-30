@@ -11,17 +11,17 @@ The jazzer standalone artifact can be fetched at _https://github.com/CodeIntelli
 4. Run the jazzer binary (jazzer.exe on Windows), specifying the classpath (including the harness JAR file) and fuzz test class.
 
 ## Working Example
-On the directory `./fuzzers/` there is a fuzzer harness example targeting `iped.parsers.mail.MSGParser`. In order to compile the fuzz test harness, the procedure applied was the following:
+On the directory `./fuzztests/` there is a fuzzer harness example targeting `iped.parsers.mail.MSGParser`. In order to compile the fuzz test harness, the procedure applied was the following:
 
 ### Generating the fuzz test harness class file
 ```
 javac -cp "jazzer_standalone.jar:commons-io-2.12.0.jar:poi-5.2.3.jar:tika-core-2.4.0-p1.jar:tika-parsers-standard-package-2.4.0-p1.jar:iped-parsers-impl-4.2-snapshot.jar:log4j-api-2.1.jar"
- ./fuzzers/ExtractorFuzz.java 
+ ./fuzztests/ExtractorFuzz.java 
 ```
 
 ### Generating the fuzz test harness JAR file
 ```
-jar cvf ExtractorFuzz.jar ./fuzzers/ExtractorFuzz.class
+jar cvf ExtractorFuzz.jar ./fuzztests/ExtractorFuzz.class
 ```
 
 
