@@ -52,4 +52,4 @@ Do not forget to put the `ExtractorFuzz.jar` in the classpath, then use the `--t
 To add a corpus is just like the libFuzzer syntax, add the path as a position argument, i.e. at the end of the jazzer command line.
 
 ### Notes for Continuous Fuzzing
-The IPED artifact and other dependencies JARs are already uploaded in this repository but you may have to add other dependencies required for the fuzz test harness.
+The IPED artifact and other dependencies JARs are available in this repository but you may have to add other dependencies required for the fuzz test harness.
